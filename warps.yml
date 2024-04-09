@@ -1,0 +1,19 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                     sCore Warps                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+warps:
+
+  # should the warps module be enabled or disabled?
+  enable: true
+
+  # Set this true to enable permission per warp.
+  per-warp-permission: false
+
+  # Set this false if you want gui warps disable.
+  gui-warps: true
+
+  # warp locations will be saved here.
+  warps: []

@@ -1,0 +1,13 @@
+tab:
+
+  interval: 20 # in ticks
+
+  header:
+    - ""
+    - "&b&lSURVIVAL"
+    - "&7(#1 Minecraft Server)"
+    - ""
+  footer:
+    - ""
+    - "&b&lONLINE: &f{ONLINE} &b&lJOINS: &f{UNIQUE}"
+    - "&b⛏ &7Need help? &b/help"

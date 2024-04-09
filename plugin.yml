@@ -1,0 +1,4 @@
+name: SupremeCore
+version: '${project.version}'
+main: net.devscape.supremecore.SupremeCore
+api-version: '1.20'

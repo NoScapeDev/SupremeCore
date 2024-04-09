@@ -1,0 +1,15 @@
+scoreboard:
+  enable: true
+  interval: 20 # in ticks
+  title: "&b&lSURVIVAL"
+  lines:
+    - "     &7{DATE}"
+    - " "
+    - "&a&lPLAYER"
+    - " &f▪ &7Name: &a{USERNAME}"
+    - " &f▪ &7Balance: &a{MONEY_FORMATTED}"
+    - " "
+    - "&e&lSERVER"
+    - " &f▪ &7Online: &e{ONLINE}"
+    - " "
+    - "&b⛏ &7Need help? &b/help"

@@ -1,0 +1,48 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                sCore Auto Announcements              | #
+# +------------------------------------------------------+ #
+############################################################
+
+announcements:
+
+  # should the announcement module be enabled or disabled?
+  enable: true
+
+  # how long until a new announcement is picked and announced.
+  interval: 120
+
+  sounds:
+    # should announcement sounds be enabled/disabled?
+    enable: true
+    # make sure this is a correct enum Sound.
+    sound: "ENTITY_PLAYER_LEVELUP"
+    # how loud you want the sound to be?
+    volume: 0.5
+    # the pitch of the sound!
+    pitch: 1
+
+  # how many players to be online for announcements to run?
+  min-players-online: 1
+
+  # announces supports:
+  # - placeholderpai
+  # - Hex Colors.
+  announces:
+    homes:
+      - ""
+      - "&6&l★ HOMES"
+      - "&fWant to save certain locations?"
+      - "&fDon't forget to set your homes!"
+      - ""
+      - "&6➝ &7/sethome <name>"
+      - ""
+    help:
+      - ""
+      - "&b&l★ HELP"
+      - "&fGet stuck on what commands or"
+      - "&fwant to know what feature we offer"
+      - "&fdo /help!"
+      - ""
+      - "&b➝ &7/sethome <name>"
+      - ""

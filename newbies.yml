@@ -1,0 +1,49 @@
+############################################################
+# +------------------------------------------------------+ #
+# |            sCore Spawn / Join / New Players          | #
+# +------------------------------------------------------+ #
+############################################################
+
+newbies:
+
+  # You can set a custom join message here, set to "none" to disable.
+  # You may use color codes, use {USERNAME} the player's name or {DISPLAYNAME} for the player's displayname.
+  custom-join-message: "&b&lJOIN &8➜ &7{USERNAME}"
+
+  # You can set a custom quit message here, set to "none" to disable.
+  # You may use color codes, use {USERNAME} the player's name or {DISPLAYNAME} for the player's displayname.
+  custom-quit-message: "&c&lQUIT &8➜ &7{USERNAME}"
+
+  # custom title shows when the player joins the game.
+  custom-title-join:
+    # should custom title join be disabled/enabled.
+    enable: true
+    top: "&e&lSERVER"
+    bottom: "&aWelcome &e{USERNAME}"
+    fade-in: 1
+    stay: 3
+    fade-out: 1
+
+  # motd when the player joins the game.
+  motd:
+    enable: true
+    message:
+      - "&8&m+---------------------------------+&r"
+      - "&e&lWelcome to the server, &a{USERNAME}&e!"
+      - "&aThere are &e{ONLINE}&7/&e{MAX_ONLINE}&a players online!"
+      - ""
+      - "&e&l** &eEnjoy your time on the server! &e&l**"
+      - "&8&m+---------------------------------+&r"
+
+  # Should we announce to the server when someone logs in for the first time?
+  # If so, use this format, replacing {DISPLAYNAME} with the player name.
+  # If not, set to "none"
+  announce-format: "&b⛏ &7Welcome &b{USERNAME}&7 to the server! &8[&b{UNIQUE}&8]"
+
+  # Do we want to give users anything on first join? Set to "none" to disable
+  # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
+  #kit: "none"
+  kit: starter
+
+  # When users die, should they respawn at their first home or bed, instead of the spawnpoint?
+  respawn-at-home: false

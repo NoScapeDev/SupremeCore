@@ -1,0 +1,37 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                      sCore Kits                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+
+kits-options:
+
+  # should the kits module be enabled or disabled?
+  enable: true
+
+  kits:
+    starter:
+      only-once-starter: true # will only allow the player to receive on start but not get it.
+      description: "Receive this when you first join the server!"
+      delay: 1200
+      items:
+        - name: "STONE_SWORD"
+          amount: 1
+        - name: "STONE_PICKAXE"
+          amount: 1
+        - name: "STONE_AXE"
+          amount: 1
+        - name: "STONE_SHOVEL"
+          amount: 1
+        - name: "BOW"
+          amount: 1
+          enchantments:
+            unbreaking: 2
