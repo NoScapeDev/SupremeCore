@@ -1,0 +1,8 @@
+vanish:
+
+
+
+  silent:
+    enable: true
+    join: "&b&lJOIN &8➜ &7{USERNAME}"
+    quit: "&c&lQUIT &8➜ &7{USERNAME}"

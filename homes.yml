@@ -9,29 +9,36 @@ homes:
   # should the homes module be enabled or disabled?
   enable: true
 
-  # Allows people to set their bed at daytime.
-  update-bed-at-daytime: true
-
-  # Set to true to enable per-world permissions for using homes to teleport between worlds.
-  # This applies to the /home only.
-  # Give someone permission to teleport to a world with essentials.worlds.<worldname>
-  world-home-permissions: false
+  # What should home system respect?
+  # This means a player won't be able to set homes if in these regions.
+  #  > Only owners/members/trusted/permission are allowed to set homes.
+  respect:
+    worldguard:
+      enable: true
+      regions:
+        - 'spawn'
+        - 'warzone'
+        - 'pvp'
+    kingdomsx: true
+    griefprevention: true
 
   # Allow players to have multiple homes.
-  # Players need essentials.sethome.multiple before they can have more than 1 home.
   # You can set the default number of multiple homes using the 'default' rank below.
-  # To remove the home limit entirely, give people 'essentials.sethome.multiple.unlimited'.
-  # To grant different home amounts to different people, you need to define a 'home-rank' below.
-  # Create the 'home-rank' below, and give the matching permission: essentials.sethome.multiple.<home-rank>
-  # For more information, visit http://wiki.ess3.net/wiki/Multihome
+  # To remove the home limit entirely, give people 'score.sethome.multiple.unlimited'.
+  # Create the 'home-rank' below, and give the matching permission: score.sethome.multiple.<home-rank>
   sethome-multiple:
     default: 3
     vip: 5
     staff: 10
 
-    # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
-    # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
-
   # Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
   # Set to 0 for no timeout.
   tpa-accept-cancellation: 120
+
+  # weather or not homes gui is enabled, set false if you just want homes list.
+  homes-gui:
+    # set false if you just want home commands.
+    enable: true
+    item:
+      material: RED_BED
+      custom-model_data: 0

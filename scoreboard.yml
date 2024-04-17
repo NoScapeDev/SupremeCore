@@ -1,15 +1,20 @@
+# Scoreboard supports placeholderapi placeholders!
+
 scoreboard:
   enable: true
   interval: 20 # in ticks
-  title: "&b&lSURVIVAL"
+  title: '&b&lSERVER'
   lines:
-    - "     &7{DATE}"
-    - " "
-    - "&a&lPLAYER"
-    - " &f▪ &7Name: &a{USERNAME}"
-    - " &f▪ &7Balance: &a{MONEY_FORMATTED}"
-    - " "
-    - "&e&lSERVER"
-    - " &f▪ &7Online: &e{ONLINE}"
-    - " "
-    - "&b⛏ &7Need help? &b/help"
+    - '&7⌚ {DATE}'
+    - ''
+    - '&b&l{USERNAME}'
+    - ' &b| &fʙᴀʟᴀɴᴄᴇ: &a${MONEY_FORMATTED}'
+    - ' &b| &fᴋɪʟʟѕ: &c{KILLS}'
+    - ' &b| &fᴅᴇᴀᴛʜѕ: &4{DEATHS}'
+    - ' &b| &fᴡᴏʀʟᴅ: &e{WORLDNAME}'
+    - ''
+    - '&b&lServer'
+    - ' &b| &fᴏɴʟɪɴᴇ: {ONLINE}/{MAX_ONLINE}'
+    - ' &b| &fᴊᴏɪɴѕ: {UNIQUE}'
+    - ' '
+    - '&7ᴘʟᴀʏᴇʀ.ѕᴇʀᴠᴇʀ'

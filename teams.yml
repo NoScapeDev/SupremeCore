@@ -1,0 +1,25 @@
+teams:
+  min-name-length: 4
+  max-name-length: 16
+
+  valid-chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+
+  # how long should a player have to wait until they can make a new team.
+  disband-delay: 120 # seconds
+
+  protections:
+    member-pvp: false # should team members be able to fight each other.
+  economy:
+    enable: false
+    creation:
+      enable: true
+      value: 500
+
+  broadcasts:
+    creation:
+      enable: true
+      message:
+        - '&e&lTeams &8➟ &f{USERNAME} &7has created the team &f&l{TEAM}'
+
+  chats:
+    team: '&e(&e&l{TEAM}&e) &7{USERNAME}&7: &f{MESSAGE}'

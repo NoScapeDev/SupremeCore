@@ -2,12 +2,60 @@ tab:
 
   interval: 20 # in ticks
 
+  # Sort player names and groups in order.
+  # To sort ranks/groups put; 'GROUPS:owner,admin,mod,default'
+  # For sorting player names put; 'A_Z-player_names'
+  sort:
+    - GROUPS:owner,admin,dev,mod,helper,builder,youtube,vip,mvp,default
+    - A_Z-player_names
+
+  # tab header
   header:
     - ""
     - "&b&lSURVIVAL"
     - "&7(#1 Minecraft Server)"
     - ""
+
+  # tab footer
   footer:
     - ""
     - "&b&lONLINE: &f{ONLINE} &b&lJOINS: &f{UNIQUE}"
     - "&b⛏ &7Need help? &b/help"
+
+  groups:
+    owner:
+      prefix: '&c[OWNER] &c'
+      suffix: ' &e{PING}'
+    admin:
+      prefix: '&c[ADMIN] &c'
+      suffix: ' &e{PING}'
+    dev:
+      prefix: '&c[DEV] &c'
+      suffix: ' &e{PING}'
+    mod:
+      prefix: '&2[MOD] &2'
+      suffix: ' &e{PING}'
+    helper:
+      prefix: '&9[HELPER] &9'
+      suffix: ' &e{PING}'
+    builder:
+      prefix: '&3[BUILD TEAM] &3'
+      suffix: ' &e{PING}'
+    youtube:
+      prefix: '&c[&fYOUTUBE&c] &c'
+      suffix: ' &e{PING}'
+    mvp:
+      prefix: '&b[MVP] &b'
+      suffix: ' &e{PING}'
+    vip:
+      prefix: '&a[VIP] &a'
+      suffix: ' &e{PING}'
+    default:
+      prefix: '&7'
+      suffix: ' &e{PING}'
+
+    # If the primary rank of the player doesn't exist here it will use '__other__'
+    # - Do not remove this section, as this is a fallback group.
+    __other__:
+      prefix: '&7'
+      suffix: ' &e{PING}'

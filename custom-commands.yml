@@ -1,0 +1,16 @@
+commands:
+  discord:
+    command: "discord"
+    aliases:
+      - "disc"
+      - "community"
+    permission: "command.discord"
+    permission-required: false
+    actions:
+      - "[message] &9&lDISCORD &fdiscord.gg/server"
+  example:
+    command: "example"
+    permission: "command.example"
+    permission-required: true
+    actions:
+      - "[console] eco give {USERNAME} 100"
